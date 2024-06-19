@@ -1,4 +1,15 @@
+import os
+import uuid
+
 from django.db import models
+from django.utils.text import slugify
+
+
+def catalog_image_file_path(instance, filename):
+    _, extension = os.path.splitext(filename)
+    filename = f"{slugify(instance.title)}-{uuid.uuid4()}{extension}"
+
+    return os.path.join("uploads/catalog/", filename)
 
 
 class Catalog(models.Model):
@@ -12,6 +23,9 @@ class Catalog(models.Model):
     )
     price = models.PositiveIntegerField()
     amount = models.PositiveIntegerField()
+    sold = models.PositiveIntegerField()
+    image = models.ImageField(null=True, upload_to=catalog_image_file_path)
+    date_created = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return self.name
