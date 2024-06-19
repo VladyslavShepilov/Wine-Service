@@ -7,7 +7,9 @@ class Catalog(models.Model):
     region = models.CharField(max_length=100)
     country = models.CharField(max_length=100)
     description = models.TextField(blank=True)
-    alcohol_content = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True)
+    alcohol_content = models.DecimalField(
+        max_digits=4, decimal_places=2, null=True, blank=True
+    )
     price = models.PositiveIntegerField()
     amount = models.PositiveIntegerField()
 
