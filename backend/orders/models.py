@@ -1,4 +1,5 @@
-from django.db import models
+from django.db import models, transaction
+from django.core.exceptions import ValidationError
 
 from wine_service import settings
 from catalog.models import Catalog
@@ -28,3 +29,24 @@ class Position(models.Model):
     class Meta:
         unique_together = ["wine_position", "order"]
         ordering = ["order"]
+
+    @staticmethod
+    def validate_available_positions(
+            ordered_amount: int,
+            available_amount: int,
+            error
+    ):
+        if ordered_amount > available_amount:
+            raise error(f"There is only {available_amount} left!")
+
+    def clean(self):
+        Position.validate_available_positions(
+            self.quantity,
+            self.wine_position.amount,
+            ValidationError
+        )
+
+    def save(self, *args, **kwargs):
+        with transaction.atomic():
+            self.full_clean()
+            return super(Position, self).save(*args, **kwargs)
