@@ -47,6 +47,5 @@ class Position(models.Model):
         )
 
     def save(self, *args, **kwargs):
-        with transaction.atomic():
-            self.full_clean()
-            return super(Position, self).save(*args, **kwargs)
+        self.full_clean()
+        return super(Position, self).save(*args, **kwargs)
