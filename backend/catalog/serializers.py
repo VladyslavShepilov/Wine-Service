@@ -4,7 +4,7 @@ from catalog.models import Catalog
 
 
 class CatalogSerializer(serializers.ModelSerializer):
-    image = serializers.ImageField(source="image", read_only=True)
+    image = serializers.ImageField(read_only=True)
 
     class Meta:
         model = Catalog
@@ -18,6 +18,7 @@ class CatalogSerializer(serializers.ModelSerializer):
             "alcohol_content",
             "price",
             "amount",
+            "sold",
             "image",
             "date_created"
         ]
@@ -25,7 +26,7 @@ class CatalogSerializer(serializers.ModelSerializer):
 
 
 class CatalogListSerializer(serializers.ModelSerializer):
-    wine_image = serializers.ImageField(source="image", read_only=True)
+    wine_image = serializers.ImageField(read_only=True)
 
     class Meta:
         model = Catalog
@@ -38,4 +39,10 @@ class CatalogListSerializer(serializers.ModelSerializer):
             "price",
             "image"
         ]
-        read_only_fields = ["id", "wine_image", "date_created"]
+        read_only_fields = ["id", "wine_image", "sold", "date_created"]
+
+
+class ImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Catalog
+        fields = ["id", "image"]
