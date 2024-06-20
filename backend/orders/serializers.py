@@ -43,4 +43,10 @@ class OrderSerializer(serializers.ModelSerializer):
                 Position.objects.create(order=order, **position_data)
 
 
-
+class OrderListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = [
+            "created_at",
+            "user",
+        ]
