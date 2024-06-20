@@ -22,11 +22,11 @@ class CatalogSerializer(serializers.ModelSerializer):
             "image",
             "date_created"
         ]
-        read_only_fields = ["id", "wine_image", "date_created"]
+        read_only_fields = ["id", "image", "date_created"]
 
 
 class CatalogListSerializer(serializers.ModelSerializer):
-    wine_image = serializers.ImageField(read_only=True)
+    image = serializers.ImageField(read_only=True)
 
     class Meta:
         model = Catalog
@@ -39,7 +39,7 @@ class CatalogListSerializer(serializers.ModelSerializer):
             "price",
             "image"
         ]
-        read_only_fields = ["id", "wine_image", "sold", "date_created"]
+        read_only_fields = ["id", "image", "sold", "date_created"]
 
 
 class ImageSerializer(serializers.ModelSerializer):
