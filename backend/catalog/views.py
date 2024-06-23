@@ -16,7 +16,7 @@ class CatalogueViewSet(viewsets.ModelViewSet):
     serializer_class = CatalogSerializer
 
     @staticmethod
-    def _params_to_str(qs):
+    def _params_to_arr_str(qs):
         qs = qs.split(",")
         return [string.capitalize() for string in qs]
 
@@ -30,14 +30,14 @@ class CatalogueViewSet(viewsets.ModelViewSet):
 
         queryset = self.queryset
         if name:
-            name = self._params_to_str(name)
+            name = self._params_to_arr_str(name)
             queryset = (
                 queryset.filter(name__in=name)
                 if len(name) == 1
                 else queryset.filter(name__icontains=name)
             )
         if country:
-            country = self._params_to_str(country)
+            country = self._params_to_arr_str(country)
             queryset = (
                 queryset.filter(country__in=country)
                 if len(country) == 1
