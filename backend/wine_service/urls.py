@@ -7,5 +7,6 @@ from wine_service import settings
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/user/", include("user.urls", namespace="user")),
-    path("api/catalog/", include("catalog.urls", namespace="catalog"))
+    path("api/catalog/", include("catalog.urls", namespace="catalog")),
+    path("api/orders/", include("orders.urls", namespace="orders")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

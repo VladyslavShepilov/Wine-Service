@@ -1,12 +1,12 @@
 from django.urls import path, include
 from rest_framework import routers
 
-from catalog.views import CatalogueViewSet
+from orders.views import OrderViewSet
 
 router = routers.DefaultRouter()
 
-router.register("", CatalogueViewSet)
+router.register("", OrderViewSet)
 
 urlpatterns = [path("", include(router.urls))]
 
-app_name = "catalog"
+app_name = "orders"
