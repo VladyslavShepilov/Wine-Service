@@ -74,6 +74,8 @@ class OrderListSerializer(serializers.ModelSerializer):
 
 
 class OrderDetailSerializer(serializers.ModelSerializer):
+    user_email = serializers.EmailField(source="user.email", read_only=True)
+    user_is_staff = serializers.BooleanField(source="user.is_staff", read_only=True)
     positions = PositionDetailSerializer(many=True, read_only=True)
 
     class Meta:
@@ -81,6 +83,7 @@ class OrderDetailSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "positions",
-            "user",
+            "user_email",
+            "user_is_staff",
             "created_at",
         ]

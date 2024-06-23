@@ -10,29 +10,18 @@ from orders.serializers import (
 
 
 class OrderViewSet(viewsets.ModelViewSet):
-    queryset = Order.objects.prefetch_related("positions", "user")
+    queryset = Order.objects.select_related("user").prefetch_related(
+        "positions__wine_position"
+    )
     serializer_class = OrderSerializer
-
-    def get_queryset(self):
-        queryset = self.queryset
-
-        if self.action == "list":
-            queryset = queryset.prefetch_related("user")
-        elif self.action == "retrieve":
-            queryset = queryset.prefetch_related(
-                "positions__wine_position__amount", "user"
-            )
-
-        return queryset
 
     def get_serializer_class(self):
         if self.action == "list":
             return OrderListSerializer
-
-        if self.action == "retrieve":
+        elif self.action == "retrieve":
             return OrderDetailSerializer
-
-        return OrderSerializer
+        else:
+            return OrderSerializer
 
     def perform_create(self, serializer):
         if not self.request.user.is_staff:
