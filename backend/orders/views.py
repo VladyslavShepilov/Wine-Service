@@ -1,5 +1,6 @@
 from datetime import datetime
 
+from django.db import transaction
 from rest_framework import viewsets
 from rest_framework.permissions import AllowAny, IsAdminUser
 
@@ -51,3 +52,14 @@ class OrderViewSet(viewsets.ModelViewSet):
             serializer.save(user=self.request.user)
         else:
             serializer.save()
+
+    def destroy(self, request, *args, **kwargs):
+        order = self.get_object()
+
+        if order.completed:
+            with transaction.atomic():
+                for position in order.positions.all():
+                    position.wine_position.amount += position.quantity
+                    position.wine_position.save()
+
+                order.delete()

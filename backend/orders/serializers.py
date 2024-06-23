@@ -35,6 +35,7 @@ class PositionDetailSerializer(serializers.ModelSerializer):
 
 class OrderSerializer(serializers.ModelSerializer):
     positions = PositionSerializer(many=True, read_only=False, allow_empty=False)
+    completed = serializers.BooleanField(read_only=True)
 
     class Meta:
         model = Order
@@ -43,6 +44,7 @@ class OrderSerializer(serializers.ModelSerializer):
             "positions",
             "user",
             "created_at",
+            "completed",
         ]
 
     def create(self, validated_data):
@@ -63,6 +65,7 @@ class OrderSerializer(serializers.ModelSerializer):
 
 class OrderListSerializer(serializers.ModelSerializer):
     user = serializers.SlugRelatedField(slug_field="email", read_only=True, many=False)
+    completed = serializers.BooleanField(read_only=True)
 
     class Meta:
         model = Order
@@ -70,6 +73,7 @@ class OrderListSerializer(serializers.ModelSerializer):
             "id",
             "created_at",
             "user",
+            "completed"
         ]
 
 
@@ -77,6 +81,7 @@ class OrderDetailSerializer(serializers.ModelSerializer):
     user_email = serializers.EmailField(source="user.email", read_only=True)
     user_is_staff = serializers.BooleanField(source="user.is_staff", read_only=True)
     positions = PositionDetailSerializer(many=True, read_only=True)
+    completed = serializers.BooleanField(read_only=True)
 
     class Meta:
         model = Order
@@ -86,4 +91,5 @@ class OrderDetailSerializer(serializers.ModelSerializer):
             "user_email",
             "user_is_staff",
             "created_at",
+            "completed",
         ]
