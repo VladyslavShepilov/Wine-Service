@@ -10,8 +10,7 @@ class PositionSerializer(serializers.ModelSerializer):
     def validate(self, attrs):
         data = super(PositionSerializer, self).validate(attrs=attrs)
         Position.validate_available_positions(
-            attrs["quantity"], data["wine_position"].amount,
-            ValidationError
+            attrs["quantity"], data["wine_position"].amount, ValidationError
         )
         return attrs
 

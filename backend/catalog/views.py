@@ -11,9 +11,7 @@ from catalog.serializers import (
 )
 
 
-class CatalogueViewSet(
-    viewsets.ModelViewSet
-):
+class CatalogueViewSet(viewsets.ModelViewSet):
     queryset = Catalog.objects.all()
     serializer_class = CatalogSerializer
 
@@ -34,23 +32,29 @@ class CatalogueViewSet(
         if name:
             name = self._params_to_str(name)
             queryset = (
-                queryset.filter(name__in=name) if len(name) == 1
+                queryset.filter(name__in=name)
+                if len(name) == 1
                 else queryset.filter(name__icontains=name)
             )
         if country:
             country = self._params_to_str(country)
             queryset = (
-                queryset.filter(country__in=country) if len(country) == 1
+                queryset.filter(country__in=country)
+                if len(country) == 1
                 else queryset.filter(country__icontains=country)
             )
         if price_ord and price_ord.lower() in ["asc", "desc"]:
             queryset = queryset.order_by(f"-price" if price_ord == "desc" else "price")
 
         if bestsellers_ord and bestsellers_ord.lower() in ["asc", "desc"]:
-            queryset = queryset.order_by(f"-sold" if bestsellers_ord == "desc" else "sold")
+            queryset = queryset.order_by(
+                f"-sold" if bestsellers_ord == "desc" else "sold"
+            )
 
         if new_ord and new_ord.lower() in ["asc", "desc"]:
-            queryset = queryset.order_by(f"-date_created" if new_ord == "desc" else "date_created")
+            queryset = queryset.order_by(
+                f"-date_created" if new_ord == "desc" else "date_created"
+            )
 
         return queryset
 

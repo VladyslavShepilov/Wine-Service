@@ -20,7 +20,7 @@ class CatalogSerializer(serializers.ModelSerializer):
             "amount",
             "sold",
             "image",
-            "date_created"
+            "date_created",
         ]
         read_only_fields = ["id", "image", "date_created"]
 
@@ -30,15 +30,7 @@ class CatalogListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Catalog
-        fields = [
-            "id",
-            "name",
-            "grape_variety",
-            "region",
-            "country",
-            "price",
-            "image"
-        ]
+        fields = ["id", "name", "grape_variety", "region", "country", "price", "image"]
         read_only_fields = ["id", "image", "sold", "date_created"]
 
 

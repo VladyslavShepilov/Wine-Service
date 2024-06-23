@@ -2,7 +2,11 @@ from rest_framework import viewsets
 from rest_framework.permissions import AllowAny, IsAdminUser
 
 from orders.models import Order
-from orders.serializers import OrderSerializer, OrderListSerializer, OrderDetailSerializer
+from orders.serializers import (
+    OrderSerializer,
+    OrderListSerializer,
+    OrderDetailSerializer,
+)
 
 
 class OrderViewSet(viewsets.ModelViewSet):
@@ -15,7 +19,9 @@ class OrderViewSet(viewsets.ModelViewSet):
         if self.action == "list":
             queryset = queryset.prefetch_related("user")
         elif self.action == "retrieve":
-            queryset = queryset.prefetch_related("positions__wine_position__amount", "user")
+            queryset = queryset.prefetch_related(
+                "positions__wine_position__amount", "user"
+            )
 
         return queryset
 
