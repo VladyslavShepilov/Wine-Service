@@ -1,4 +1,5 @@
 import './header.scss';
+import { Link, NavLink } from 'react-router-dom';
 
 type Props = {};
 
@@ -6,32 +7,28 @@ export const Header: React.FC<Props> = () => {
   return (
     <div className="header">
       <div className="header__content">
-        <div className="nav">
-          <ul className="nav__list">
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                Wines
-              </a>
+        <Link to="/" className="header__logo">
+          <img
+            src="\src\assets\images\logo.png"
+            alt="logo"
+            className="header__logo-img"
+          />
+        </Link>
+        <div className="header__nav">
+          <ul className="header__nav-list">
+            <li className="header__nav-item">
+              <NavLink to="/" className="header__nav-link">
+                <img src="\src\assets\icons\account.png" alt="My account" />
+              </NavLink>
             </li>
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                Pairings
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                Grapes
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                Regions
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="/" className="nav__link">
-                Awards
-              </a>
+            <li className="header__nav-item">
+              <NavLink to="/" className="header__nav-link">
+                <img
+                  src="\src\assets\icons\cart.png"
+                  alt="My cart"
+                  className="header__nav-img"
+                />
+              </NavLink>
             </li>
           </ul>
         </div>

@@ -1,16 +1,17 @@
 import './app.scss';
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import { Slider } from './components/Slider';
+import { Routes, Route } from 'react-router-dom';
+// import { Footer } from './components/Footer';
+// import { Header } from './components/Header';
+// import { Slider } from './components/Slider';
+import { HomePage } from './pages/HomePage';
 
 const App: React.FC = () => {
   return (
     <>
-      <div className="app">
-        <Header />
-        <Slider />
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/about" element={<Slider />} /> */}
+      </Routes>
     </>
   );
 };

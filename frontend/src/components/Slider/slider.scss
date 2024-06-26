@@ -4,6 +4,10 @@
   height: 80vh;
   overflow: hidden;
 
+  &__title {
+    // @include H1;
+  }
+
   &__track {
     display: flex;
     transition: transform 0.5s ease-in-out;

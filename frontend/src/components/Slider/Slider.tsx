@@ -4,9 +4,9 @@ import { useState } from 'react';
 type Props = {};
 
 const images = [
-  '/src/assets/images/image1.jpg',
-  '/src/assets/images/image2.jpg',
-  '/src/assets/images/image3.jpg',
+  '/src/assets/images/header-slider/image1.jpg',
+  '/src/assets/images/header-slider/image2.jpg',
+  '/src/assets/images/header-slider/image3.jpg',
 ];
 
 export const Slider: React.FC<Props> = () => {
@@ -29,6 +29,9 @@ export const Slider: React.FC<Props> = () => {
       <div className="slider__arrow slider__arrow--left" onClick={goToPrevious}>
         &#10094;
       </div>
+
+      <h1 className="slider__title">discover the wonders of wine</h1>
+
       <div
         className="slider__track"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
