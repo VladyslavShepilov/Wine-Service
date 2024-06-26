@@ -1,3 +1,5 @@
+// @import url(../../assets/styles/nav.scss);
+
 .footer {
   // height: 100px;
   background-color: plum;
@@ -17,18 +19,3 @@
   }
 }
 
-.nav {
-  &__list {
-    display: flex;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 40px;
-  }
-
-  &__link {
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-}

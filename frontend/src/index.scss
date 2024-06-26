@@ -1,16 +1,62 @@
 @import './reset.css';
-@import 'normalize.css';
+@import './assets/styles/fonts.scss';
+// @import './assets/styles/mixins.scss';
+// @import 'normalize.css';
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //   sans-serif;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }
+
+html {
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #0F0F10;
+}
+
+h1 {
+  font-family: 'Archivo';
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 57.2px;
+}
+
+h2 {
+  font-family: Archivo;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 35.2px;
+}
+
+h3 {
+  font-family: Archivo;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+h4 {
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.11px;
+}
+
+h5 {
+  font-family: Archivo;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
 }
