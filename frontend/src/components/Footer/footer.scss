@@ -5,17 +5,40 @@
   background-color: plum;
   // padding: 0;
 
-  &__link {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 13px;
-    // line-height: 20px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    // padding-bottom: 8px;
-    // border-bottom: 2px solid blue;
+  // &__content {
 
-    color: white;
+  // }
+
+  &__nav {
+    height: 42px;
+    margin-top: 24px;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__nav-item {
+    padding: 8px;
+  }
+
+  &__nav-link {
+    //styleName: Main text;
+    font-family: Archivo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 24px;
   }
 }
 

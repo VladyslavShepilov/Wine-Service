@@ -1,0 +1,12 @@
+.favorites {
+  background-color: brown;
+
+  &__content {
+    height: 640px;
+  }
+
+  &__title {
+    padding-top: 80px;
+    text-transform: uppercase;
+  }
+}

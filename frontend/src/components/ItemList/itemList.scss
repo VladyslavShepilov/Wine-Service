@@ -1,0 +1,32 @@
+// .swiper-container {
+//   // width: 100%;
+//   // height: 100%;
+//   // margin-top: 20px;
+//   // display: flex;
+//   // gap: 10px;
+//   // justify-content: space-between;
+// }
+
+.swiper-wrapper {
+  width: 1260px;
+  // gap: 80px;
+  // display: flex;
+  // justify-content: space-around;
+  // padding-left: 52px;
+  // align-items: start;
+  // display: block;
+  margin-top: 40px;
+  // width: 1440px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  // display: flex;
+  // flex-shrink: inherit;
+  flex: 0 0 300px;
+  // margin: auto;
+  // gap: 10px;
+  // margin: 0;
+  // justify-content: center;
+  // align-items: center;
+}
