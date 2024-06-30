@@ -1,5 +1,5 @@
 @import './reset.css';
-@import './assets/styles/fonts.scss';
+@import './shared/styles/fonts.scss';
 // @import './assets/styles/mixins.scss';
 // @import 'normalize.css';
 
@@ -20,7 +20,7 @@ body {
 html {
   font-family: 'Archivo', sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 27px;
   color: #0F0F10;
 }
@@ -29,34 +29,34 @@ h1 {
   font-family: 'Archivo';
   font-size: 44px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 57.2px;
 }
 
 h2 {
   font-family: Archivo;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 500px;
   line-height: 35.2px;
 }
 
 h3 {
   font-family: Archivo;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 500px;
   line-height: 42px;
 }
 
 h4 {
   font-family: Archivo;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 500px;
   line-height: 26.11px;
 }
 
 h5 {
   font-family: Archivo;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 500px;
   line-height: 24.2px;
 }

@@ -1,0 +1,60 @@
+import type { Wine } from '../types/wine';
+
+export const wines: Wine[] = [
+  {
+    title: 'Chateau Ste. Michelle Cabernet Sauvignon',
+    country: 'France',
+    type: 'Red',
+    region: 'Bordeaux',
+    volume: 750,
+    price: 20,
+  },
+  {
+    title: 'Wine 2',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    title: 'Wine 3',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    title: 'Wine 4',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    title: 'Wine 5',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    title: 'Wine 6',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    title: 'Wine 7',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+];
