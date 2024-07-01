@@ -50,6 +50,8 @@ class OrderSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         with transaction.atomic():
             positions_data = validated_data.pop("positions")
+            if not positions_data:
+                raise ValidationError("Order should have at least one position")
             order = Order.objects.create(**validated_data)
             for position_data in positions_data:
                 Position.objects.create(order=order, **position_data)
