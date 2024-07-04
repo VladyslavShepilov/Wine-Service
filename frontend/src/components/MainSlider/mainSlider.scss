@@ -1,5 +1,13 @@
+@import '../../shared/styles/variables';
+
 .main-slider {
-  height: 900px;
+  // height: 900px;
+
+  // background-image: "frontend\\src\\assets\\images\\header-slider\\main.jfif";
+  // background-image: url("../../assets/images/header-slider/main.jpg");
+  // background-image: url("\\src\\assets\\images\\header-slider\\main.jpg");
+  // background-position: ;
+
 
   
   &__content {
@@ -9,10 +17,12 @@
   &__title {
     text-transform: uppercase;
     font-weight: 600;
+    color: $primary;
   }
 
   &__text {
     padding-top: 16px;
+    color: $white;
   }
 
   &__link--explore {
@@ -30,7 +40,8 @@
     padding: 0;
     margin-top: 80px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid $white;
+    color: $white;
     text-transform: uppercase;
 
     background-color: transparent;
@@ -43,21 +54,21 @@
     text-align: center;
   }
 
-  &__link--start {
-    display: block;
-    width: 97px;
-    height: 60px;
-    margin: 185px auto 0;
+  // &__link--start {
+  //   display: block;
+  //   width: 97px;
+  //   height: 60px;
+  //   margin: 185px auto 0;
 
-  }
+  // }
 
-  &__button--start {
-    display: block;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-  }
+  // &__button--start {
+  //   display: block;
+  //   cursor: pointer;
+  //   border: none;
+  //   padding: 0;
+  //   background-color: transparent;
+  // }
 }
 
 

@@ -1,18 +1,17 @@
 @import '../../shared/styles/variables';
 
-.categories {
-  height: 684px;
-  width: 100%;
+.favorites {
   background-color: $white;
 
-  // &__content {
-
-  // }
+  &__content {
+    height: 640px;
+    overflow: hidden;
+  }
 
   &__title {
-    font-weight: 500;
+    padding-top: 80px;
     text-transform: uppercase;
+    font-weight: 500;
     color: $primary;
-    // margin-top: ;
   }
 }

@@ -1,5 +1,5 @@
 import type { Wine } from '../../shared/types/wine';
-import './itemCard.scss';
+import './favoritesCard.scss';
 
 // type Props = {
 //   item: {
@@ -16,25 +16,25 @@ type Props = {
   item: Wine;
 };
 
-export const ItemCard: React.FC<Props> = ({ item }) => {
+export const FavoritesCard: React.FC<Props> = ({ item }) => {
   const { title, country, type, region, volume, price } = item;
 
   return (
-    <div className="item-card">
-      <div className="item-card__content">
-        <div className="item-card__photo-container">
+    <div className="favorites-card">
+      <div className="favorites-card__content">
+        <div className="favorites-card__photo-container">
           <img
             src="\src\assets\images\wine-photo\photo1.png"
             alt="wine"
-            className="item-card__photo"
+            className="favorites-card__photo"
           />
-          <div className="item-card__circle"></div>
+          <div className="favorites-card__circle"></div>
         </div>
-        <h5 className="item-card__title">{title}</h5>
-        <p className="item-card__description">
+        <h5 className="favorites-card__title">{title}</h5>
+        <p className="favorites-card__description">
           {country}/{type}/{region}/{volume} ml
         </p>
-        <p className="item-card__price">${price}/bottle</p>
+        <h4 className="favorites-card__price">${price}/bottle</h4>
       </div>
     </div>
   );

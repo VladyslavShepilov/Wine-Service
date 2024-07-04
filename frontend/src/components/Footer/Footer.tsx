@@ -36,14 +36,14 @@ export const Footer: React.FC<Props> = () => {
           <div className="footer__bottom">
             <Link to="/" className="footer__logo">
               <img
-                src="\src\assets\images\logo.png"
+                src="\src\assets\images\logo-white.svg"
                 alt="logo"
                 className="footer__logo-img"
               />
             </Link>
             <Link to="/" className="footer__text">
               <img
-                src="\src\assets\images\footer\discover.png"
+                src="\src\assets\images\footer\discover-white.svg"
                 alt="lets discover"
                 className="footer__logo-img"
               />

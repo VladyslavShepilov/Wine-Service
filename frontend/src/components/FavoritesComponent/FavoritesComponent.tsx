@@ -1,8 +1,8 @@
 // import { ItemCard } from '../ItemCard/ItemCard';
 import { wines } from '../../shared/constants/wines';
-import { ItemList } from '../ItemList/ItemList';
+import { FavoritesList } from '../FavoritesList/FavoritesList';
 import { Laout } from '../Laout';
-import './favorites.scss';
+import './favoritesComponent.scss';
 
 type Props = {};
 
@@ -21,7 +21,7 @@ export const Favorites: React.FC<Props> = () => {
       <Laout>
         <div className="favorites__content">
           <h2 className="favorites__title">Customers favorites</h2>
-          <ItemList items={wines} />
+          <FavoritesList items={wines} />
         </div>
       </Laout>
     </div>

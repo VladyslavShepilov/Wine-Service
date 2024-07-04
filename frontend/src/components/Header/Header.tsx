@@ -11,7 +11,7 @@ export const Header: React.FC<Props> = () => {
         <div className="header__content">
           <Link to="/" className="header__logo">
             <img
-              src="\src\assets\images\logo.png"
+              src="\src\assets\images\logo-red.svg"
               alt="logo"
               className="header__logo-img"
             />
@@ -20,13 +20,16 @@ export const Header: React.FC<Props> = () => {
             <ul className="header__nav-list">
               <li className="header__nav-item">
                 <NavLink to="/" className="header__nav-link">
-                  <img src="\src\assets\icons\account.png" alt="My account" />
+                  <img
+                    src="\src\assets\icons\account-red.svg"
+                    alt="My account"
+                  />
                 </NavLink>
               </li>
               <li className="header__nav-item">
                 <NavLink to="/" className="header__nav-link">
                   <img
-                    src="\src\assets\icons\cart.png"
+                    src="\src\assets\icons\cart-red.svg"
                     alt="My cart"
                     className="header__nav-img"
                   />

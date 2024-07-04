@@ -4,11 +4,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import { EffectFade } from 'swiper/modules';
-
-import './itemList.scss';
-import { ItemCard } from '../ItemCard';
+import { FavoritesCard } from '../FavoritesCard';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import type { Wine } from '../../shared/types/wine';
+
+import './favoritesList.scss';
 
 type Props = {
   items: Wine[];
@@ -16,7 +16,7 @@ type Props = {
 
 // import { wines } from '../../shared/constants/wines';
 
-export const ItemList: React.FC<Props> = ({ items }) => {
+export const FavoritesList: React.FC<Props> = ({ items }) => {
   return (
     <Swiper
       spaceBetween={20}
@@ -33,7 +33,7 @@ export const ItemList: React.FC<Props> = ({ items }) => {
     >
       {items.map((item, index) => (
         <SwiperSlide key={index}>
-          <ItemCard item={item} />
+          <FavoritesCard item={item} />
         </SwiperSlide>
       ))}
     </Swiper>

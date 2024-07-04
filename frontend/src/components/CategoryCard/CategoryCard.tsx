@@ -12,11 +12,7 @@ export const CategoryCard: React.FC<Props> = ({ item }) => {
     <div className="category-card">
       <div className="category-card__content">
         <div className="category-card__photo-container">
-          <img
-            src="\src\assets\images\wine-photo\photo1.png"
-            alt="wine"
-            className="category-card__photo"
-          />
+          <img src={item.src} alt="wine" className="category-card__photo" />
         </div>
         <h5 className="category-card__title">{title}</h5>
         <p className="category-card__description">{description}</p>

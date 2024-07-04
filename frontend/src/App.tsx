@@ -1,13 +1,14 @@
 import './app.scss';
 import { Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
+import { FiltersPage } from './pages/FiltersPage';
 
 const App: React.FC = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/about" element={<Slider />} /> */}
+        <Route path="/filters" element={<FiltersPage />} />
       </Routes>
     </>
   );
