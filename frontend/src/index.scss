@@ -1,6 +1,8 @@
 @import './reset.css';
 @import './shared/styles/fonts.scss';
 // @import './assets/styles/mixins.scss';
+@import './shared/styles/variables.scss';
+// @import '/frontend/src/components/Header/header.scss';
 // @import 'normalize.css';
 
 body {
@@ -20,43 +22,47 @@ body {
 html {
   font-family: 'Archivo', sans-serif;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 27px;
-  color: #0F0F10;
+  color: $black;
 }
 
 h1 {
   font-family: 'Archivo';
   font-size: 44px;
   font-style: italic;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 57.2px;
 }
 
 h2 {
   font-family: Archivo;
   font-size: 32px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 35.2px;
 }
 
 h3 {
   font-family: Archivo;
   font-size: 28px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 42px;
 }
 
 h4 {
   font-family: Archivo;
   font-size: 24px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 26.11px;
 }
 
 h5 {
   font-family: Archivo;
   font-size: 20px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 24.2px;
+}
+
+p {
+  color: $dark-gray;
 }

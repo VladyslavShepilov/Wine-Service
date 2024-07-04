@@ -1,7 +1,9 @@
+@import '../../shared/styles/variables';
+
 .header {
   // width: 100%;
   height: 82px;
-  background-color: brown;
+  // background-color: brown;
 
   &__content {
     display: flex;
@@ -15,15 +17,23 @@
     align-items: center;
     width: 181px;
     height: 42px;
+    // color: blue;
+    // fill: blue;
+    // background-color: blue;
   }
 
-  // &__logo-img {
-  //   line-height: 100%;
-  //   text-align: center;
-  //   width: 100%;
-  //   height: 100%;
-  //   width: 181px;
-  //   height: 42px;
+  // &__logo-img svg path {
+  //   fill: blue;
+  //   // color: blue;
+  //   // background-color: blue;
+  //   // color: $primary;
+  //   // background-color: $primary;
+  //   // line-height: 100%;
+  //   // text-align: center;
+  //   // width: 100%;
+  //   // height: 100%;
+  //   // width: 181px;
+  //   // height: 42px;
   // }
 
   &__nav-list {

@@ -1,8 +1,9 @@
 // @import url(../../assets/styles/nav.scss);
+@import '../../shared/styles/variables';
 
 .footer {
   // height: 100px;
-  background-color: plum;
+  background-color: $primary;
   // padding: 0;
 
   // &__content {
@@ -31,7 +32,7 @@
     line-height: 27px;
     text-align: left;
     text-decoration: none;
-    color: black;
+    color: $white;
   }
 
   &__bottom {
