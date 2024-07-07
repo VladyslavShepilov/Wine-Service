@@ -2,6 +2,7 @@ import type { Wine } from '../types/wine';
 
 export const wines: Wine[] = [
   {
+    id: 1,
     title: 'Chateau Ste. Michelle Cabernet Sauvignon',
     country: 'France',
     type: 'Red',
@@ -10,6 +11,7 @@ export const wines: Wine[] = [
     price: 20,
   },
   {
+    id: 2,
     title: 'Wine 2',
     country: 'Italy',
     type: 'White',
@@ -18,6 +20,7 @@ export const wines: Wine[] = [
     price: 25,
   },
   {
+    id: 3,
     title: 'Wine 3',
     country: 'Italy',
     type: 'White',
@@ -26,6 +29,7 @@ export const wines: Wine[] = [
     price: 25,
   },
   {
+    id: 4,
     title: 'Wine 4',
     country: 'Italy',
     type: 'White',
@@ -34,6 +38,7 @@ export const wines: Wine[] = [
     price: 25,
   },
   {
+    id: 5,
     title: 'Wine 5',
     country: 'Italy',
     type: 'White',
@@ -42,6 +47,7 @@ export const wines: Wine[] = [
     price: 25,
   },
   {
+    id: 6,
     title: 'Wine 6',
     country: 'Italy',
     type: 'White',
@@ -50,6 +56,43 @@ export const wines: Wine[] = [
     price: 25,
   },
   {
+    id: 7,
+    title: 'Wine 7',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    id: 8,
+    title: 'Wine 7',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    id: 9,
+    title: 'Wine 7',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    id: 10,
+    title: 'Wine 7',
+    country: 'Italy',
+    type: 'White',
+    region: 'Tuscany',
+    volume: 750,
+    price: 25,
+  },
+  {
+    id: 11,
     title: 'Wine 7',
     country: 'Italy',
     type: 'White',

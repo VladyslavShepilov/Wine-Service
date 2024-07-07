@@ -2,7 +2,7 @@
 // import { CategoryCard } from '../CategoryCard';
 // import { ItemList } from '../ItemList/ItemList';
 import { CategoriesList } from '../CategoriesList';
-import { Laout } from '../Laout';
+import { Layout } from '../Layout';
 import './categoriesComponent.scss';
 
 type Props = {};
@@ -10,14 +10,14 @@ type Props = {};
 export const CategoriesComponent: React.FC<Props> = () => {
   return (
     <div className="categories">
-      <Laout>
+      <Layout>
         <div className="categories__content">
           <h2 className="categories__title">
             Choose among different categories
           </h2>
           <CategoriesList />
         </div>
-      </Laout>
+      </Layout>
     </div>
   );
 };

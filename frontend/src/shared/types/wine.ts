@@ -1,4 +1,5 @@
 export type Wine = {
+  id: number;
   title: string;
   country: string;
   type: string;

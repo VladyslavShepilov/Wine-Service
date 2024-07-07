@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Laout } from '../Laout';
+import { Layout } from '../Layout';
 import './footer.scss';
 
 type Props = {};
@@ -7,7 +7,7 @@ type Props = {};
 export const Footer: React.FC<Props> = () => {
   return (
     <div className="footer">
-      <Laout>
+      <Layout>
         <div className="footer__content">
           <div className="footer__nav">
             <ul className="footer__nav-list">
@@ -50,7 +50,7 @@ export const Footer: React.FC<Props> = () => {
             </Link>
           </div>
         </div>
-      </Laout>
+      </Layout>
     </div>
   );
 };

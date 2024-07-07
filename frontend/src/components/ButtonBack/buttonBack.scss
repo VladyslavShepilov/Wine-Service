@@ -1,0 +1,17 @@
+@import '../../shared/styles/variables';
+
+.button-back {
+  &__button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 24px 24px 24px 0;
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  &__link {
+    width: max-content;
+    // padding: 15px;
+  }
+}

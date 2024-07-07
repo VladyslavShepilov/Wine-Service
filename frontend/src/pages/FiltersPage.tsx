@@ -1,3 +1,6 @@
+import { Filters } from '../components/Filters';
+import { FiltersResultsComponent } from '../components/FiltersResultsComponent';
+import { FiltersText } from '../components/FiltersText';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 // import { Slider } from '../components/Slider';
@@ -5,11 +8,11 @@ import { Header } from '../components/Header';
 export const FiltersPage: React.FC = () => {
   return (
     <>
-      <div className="app">
-        <Header />
-        {/* <Slider /> */}
-        <Footer />
-      </div>
+      <Header />
+      <FiltersText />
+      <Filters />
+      <FiltersResultsComponent />
+      <Footer />
     </>
   );
 };

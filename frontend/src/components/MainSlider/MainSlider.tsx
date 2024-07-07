@@ -1,7 +1,7 @@
 import type React from 'react';
 // import BackgroundSlider from 'react-background-slider';
 import './mainSlider.scss';
-import { Laout } from '../Laout';
+import { Layout } from '../Layout';
 import { Link } from 'react-router-dom';
 
 // const images = [
@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 export const MainSlider: React.FC = () => {
   return (
     <div className="main-slider">
-      <Laout>
+      <Layout>
         <div className="main-slider__content">
           <h1 className="main-slider__title">discover the wonders of wine</h1>
           <p className="main-slider__text">
@@ -48,7 +48,7 @@ export const MainSlider: React.FC = () => {
             // classname={slider}
           />
         </div> */}
-      </Laout>
+      </Layout>
     </div>
   );
 };

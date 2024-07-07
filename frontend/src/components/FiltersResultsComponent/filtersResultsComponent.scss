@@ -1,0 +1,12 @@
+@import '../../shared/styles/variables';
+
+.filtersResults {
+  &__content {
+    margin-bottom: 160px;
+  }
+
+  &__title {
+    color: $black;
+    margin-bottom: 40px;
+  }
+}

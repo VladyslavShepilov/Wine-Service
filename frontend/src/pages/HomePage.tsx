@@ -12,8 +12,8 @@ import { MainWrapper } from '../components/MainWrapper';
 export const HomePage: React.FC = () => {
   return (
     <>
-      {/* <Header />
-      <MainSlider /> */}
+      {/* <Header /> */}
+      {/* <MainSlider /> */}
       <MainWrapper />
       <Favorites />
       <CategoriesComponent />
