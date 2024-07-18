@@ -1,0 +1,36 @@
+@import '../../shared/styles/variables';
+
+.perfect-fit {
+  margin-bottom: 144px;
+
+  &__title {
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__image {
+    width: 668px;
+    height: 362px;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    // align-items:;
+    justify-content: space-between;
+  }
+
+  &__text-title {
+    color: $black;
+  }
+
+  &__text {
+    color: $dark-gray;
+  }
+}

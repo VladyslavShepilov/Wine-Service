@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import { EffectFade } from 'swiper/modules';
-import { FavoritesCard } from '../FavoritesCard';
+import { WineCard } from '../WineCard';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import type { Wine } from '../../shared/types/wine';
 
@@ -21,10 +21,10 @@ export const FavoritesList: React.FC<Props> = ({ items }) => {
     <Swiper
       spaceBetween={20}
       slidesPerView={4}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       // navigation={true}
       // pagination={{ clickable: true }}
       // scrollbar={{ draggable: true }}
@@ -33,7 +33,7 @@ export const FavoritesList: React.FC<Props> = ({ items }) => {
     >
       {items.map((item, index) => (
         <SwiperSlide key={index}>
-          <FavoritesCard item={item} />
+          <WineCard item={item} />
         </SwiperSlide>
       ))}
     </Swiper>

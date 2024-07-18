@@ -1,4 +1,4 @@
-import { Laout } from '../Laout';
+import { Layout } from '../Layout';
 import './header.scss';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ type Props = {};
 export const Header: React.FC<Props> = () => {
   return (
     <div className="header">
-      <Laout>
+      <Layout>
         <div className="header__content">
           <Link to="/" className="header__logo">
             <img
@@ -38,7 +38,7 @@ export const Header: React.FC<Props> = () => {
             </ul>
           </div>
         </div>
-      </Laout>
+      </Layout>
     </div>
   );
 };

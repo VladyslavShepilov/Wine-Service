@@ -1,0 +1,25 @@
+@import '../../shared/styles/variables';
+
+.button {
+  &__container {
+    display: flex;
+    width: 324px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: $primary;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    width: max-content;
+  }
+
+  &__text {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    color: $white;
+  }
+}
