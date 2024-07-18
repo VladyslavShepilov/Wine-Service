@@ -6,8 +6,13 @@ export const wines: Wine[] = [
     title: 'Chateau Ste. Michelle Cabernet Sauvignon',
     country: 'France',
     type: 'Red',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Bordeaux',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 20,
   },
   {
@@ -15,8 +20,13 @@ export const wines: Wine[] = [
     title: 'Wine 2',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -24,8 +34,13 @@ export const wines: Wine[] = [
     title: 'Wine 3',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -33,8 +48,13 @@ export const wines: Wine[] = [
     title: 'Wine 4',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -42,8 +62,13 @@ export const wines: Wine[] = [
     title: 'Wine 5',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -51,8 +76,13 @@ export const wines: Wine[] = [
     title: 'Wine 6',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -60,8 +90,13 @@ export const wines: Wine[] = [
     title: 'Wine 7',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -69,8 +104,13 @@ export const wines: Wine[] = [
     title: 'Wine 7',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -78,8 +118,13 @@ export const wines: Wine[] = [
     title: 'Wine 7',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -87,8 +132,13 @@ export const wines: Wine[] = [
     title: 'Wine 7',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
   {
@@ -96,8 +146,13 @@ export const wines: Wine[] = [
     title: 'Wine 7',
     country: 'Italy',
     type: 'White',
+    aroma: ['black cheries', 'mocha', 'spices'],
+    aging: 2020,
     region: 'Tuscany',
     volume: 750,
+    perfectFit: 'Grilled ribeye steak with a rosemary garlic butter sauce',
+    description:
+      'Known for its consistency and quality, this wine offers great value as an accessible yet sophisticated Cabernet Sauvignon. It can be enjoyed now or aged for added complexity.',
     price: 25,
   },
 ];

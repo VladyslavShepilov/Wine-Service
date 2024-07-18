@@ -21,10 +21,10 @@ export const FavoritesList: React.FC<Props> = ({ items }) => {
     <Swiper
       spaceBetween={20}
       slidesPerView={4}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       // navigation={true}
       // pagination={{ clickable: true }}
       // scrollbar={{ draggable: true }}

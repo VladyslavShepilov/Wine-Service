@@ -2,14 +2,15 @@
 
 .favorites {
   background-color: $white;
+  margin-bottom: 112px;
 
   &__content {
-    height: 640px;
+    // height: 640px;
     overflow: hidden;
   }
 
   &__title {
-    padding-top: 80px;
+    // padding-top: 80px;
     text-transform: uppercase;
     font-weight: 500;
     color: $primary;

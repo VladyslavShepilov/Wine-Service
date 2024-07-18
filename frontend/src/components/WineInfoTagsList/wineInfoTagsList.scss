@@ -1,0 +1,15 @@
+@import '../../shared/styles/variables';
+
+.wineInfoTagsList {
+  &__tag {
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Archivo;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    // text-align: left;
+    color: $primary;
+    background-color: $secondary;
+  }
+}

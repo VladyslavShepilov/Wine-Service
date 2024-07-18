@@ -1,7 +1,12 @@
 // import { Link } from 'react-router-dom';
 import type { Wine } from '../../shared/types/wine';
+import { WineInfoQuantity } from '../WineInfoQuantity';
 import { StarRating } from '../StarRating';
+// import { WineInfoTagsList } from '../WineInfoTagsList';
+
 import './wineInfo.scss';
+import { WineInfoField } from '../WineInfoField';
+import { ButtonComponent } from '../ButtonComponent';
 
 // type Props = {
 //   item: {
@@ -19,7 +24,18 @@ type Props = {
 };
 
 export const WineInfo: React.FC<Props> = ({ item }) => {
-  const { id, title, country, type, region, volume, price } = item;
+  const {
+    // id,
+    title,
+    country,
+    type,
+    aroma,
+    aging,
+    region,
+    volume,
+    description,
+    price,
+  } = item;
 
   return (
     <div className="wineInfo-card">
@@ -33,11 +49,16 @@ export const WineInfo: React.FC<Props> = ({ item }) => {
         </div>
         <div className="wineInfo-card__about">
           <h2 className="wineInfo-card__title">{title}</h2>
-          <p className="wineInfo-card__description">
+          <p className="wineInfo-card__main-info">
             {country}/{type}/{region}/{volume} ml
           </p>
           <StarRating />
-          {/* <h4 className="wineInfo-card__price">${price}/bottle</h4> */}
+          <WineInfoQuantity />
+          <WineInfoField title={'Aroma:'} tags={aroma} />
+          <WineInfoField title={'Aging:'} tags={aging} />
+          <WineInfoField title={'Alcohol content:'} tags={volume} />
+          <p className="wineInfo-card__description">{description}</p>
+          <ButtonComponent title={'Add to cart/' + String(price) + '$'} />
         </div>
       </div>
     </div>

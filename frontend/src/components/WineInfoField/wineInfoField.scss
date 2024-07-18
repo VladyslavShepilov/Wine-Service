@@ -1,0 +1,29 @@
+@import '../../shared/styles/variables';
+
+.wineInfo-field {
+  // display: flex;
+  // align-items: center;
+  // // justify-content: space-around;
+  // flex-wrap: wrap;
+  // gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  // justify-items: stretch;
+  align-items: baseline;
+  margin-bottom: 24px;
+  
+  &__title {
+    // display: inline-block;
+    // min-width: max-content;
+    color: $black;
+    // padding-right: 5px;
+  }
+
+  &__tags-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
